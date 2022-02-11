@@ -1,3 +1,126 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 3000px;
+}
+
+header .main-class {
+    background-color: #202020;
+    width: 100%;
+    height: 65px;
+}
+
+.textoprimeiro {
+    animation: textoprimeiro 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.main2 .leia-mais {
+    /*Posições*/
+    display: block;
+    position: absolute;
+    right: 300px;
+    bottom: 170px;
+    width: 130px;
+    height: 40px;
+    transition: 0.5s;
+    /* Estilos*/
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
+    margin: 30px;
+    background-color: #6b6b6b;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.main2 .leia-mais:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.main2 h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 400px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: 200px;
+    top: 200px;
+    cursor: pointer;
+}
+
+.main2 .dolphin path {
+    fill: transparent;
+    stroke-width: 1;
+    stroke: #3cd835;
+}
+
+.main2 .dolphin svg {
+    position: absolute;
+    top: 170px;
+    width: 600px;
+    left: 200px;
+}
+
+.main2 .dolphin path {
+    stroke-dasharray: 2560;
+    stroke-dashoffset: 0;
+}
+
+.main2 .dolphin:hover path {
+    animation: animateDolphin 2s linear forwards;
+}
+
+@keyframes animateDolphin {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 2560;
+    }
+    80% {
+        stroke-dashoffset: 5120;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 5120;
+        fill: #3cd835;
+        ;
+    }
+}
+
+@keyframes textoprimeiro {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main2 .leia-mais {
+        right: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main2 .leia-mais {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main2 .leia-mais {
+        right: 100px;
+    }
 }
