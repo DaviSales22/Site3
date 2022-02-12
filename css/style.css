@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    height: 3000px;
+    height: 100%;
 }
 
 header .main-class {
@@ -18,6 +18,21 @@ header .main-class {
 .textoprimeiro {
     animation: textoprimeiro 1s ease-in-out forwards;
     opacity: 0;
+}
+
+.main-class {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+}
+
+.main-class a {
+    text-decoration: none;
+    color: white;
 }
 
 #demo {
@@ -36,7 +51,7 @@ header .main-class {
     /* Estilos*/
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 16px;
     border: none;
     margin: 30px;
     background-color: #6b6b6b;
